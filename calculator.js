@@ -6,7 +6,7 @@
 let display = document.getElementById("result");
 
 //Joining all inputs together
-const addInput = (value) => {
+const inputingValue = (value) => {
     display.value += value;
 };
 
@@ -30,14 +30,12 @@ const removeLastValue = () => {
 
 //to change positive number to negative and vice versa
 const negativeNumber = () => {
-    let typedInput = display.value;
     let negativeResult = eval(display.value * -1);
     display.value = negativeResult;
 }
 
 //to calculate Square Root of a number
 const calculateSquareroot = () => {
-    let typedInput = display.value;
     let SquareRoot = eval(Math.sqrt(display.value));
     display.value = SquareRoot;
 };
